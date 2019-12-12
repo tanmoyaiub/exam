@@ -3,6 +3,7 @@
 	
 	if(isset($_POST['submit']))
 		{
+			
 			$id			= $_GET['id'];
 			$uname 		= $_POST['uname'];	
 			$password 	= $_POST['password'];

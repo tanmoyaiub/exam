@@ -4,7 +4,7 @@
 	
 	if(isset($_POST['submit']))
 		{
-			
+			$id			=$_GET['id'];
 			$uname 		= $_POST['uname'];	
 			$password 	= $_POST['password'];
 			$sname		= $_POST['sname'];
@@ -16,7 +16,7 @@
 				}
 			else
 				{
-					$status = register($id , $uname , $password , $sname);
+					$status = register($id , $uname , $password , $sname , $role);
 					
 					if($status)
 						{
